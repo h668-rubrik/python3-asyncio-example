@@ -27,7 +27,7 @@ with open(os.path.join(__location__, '.creds')) as f:
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--cluster', choices=creds, help='Choose a cluster in .creds')
+parser.add_argument('--cluster', choices=creds, required='True', help='Choose a cluster in .creds')
 args = parser.parse_args()
 
 creds=creds[args.cluster]
