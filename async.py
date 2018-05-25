@@ -127,4 +127,3 @@ elapsed_async = end-start-elapsed_sync+elapsed_mid
 print("Data from : {} - {}".format(timestamp_from,timestamp_to))
 print("Event series reported : {}".format(len(EVENT_DATA)))
 print("Sync : {}\nAsync : {}".format(elapsed_sync,elapsed_async))
-print("Number of calls : {}\n".format(counter_sync))

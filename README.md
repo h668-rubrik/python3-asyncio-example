@@ -15,26 +15,24 @@
 
 ### Help TXT
 ```
-D:\Home Directories\Home\Documents\Repositories\python3-asyncio-example [master ≡ +1 ~2 -0 !]> python .\async.py --help
-usage: async.py [-h]
-                [--cluster {poc01,devops1,se3,isilon,sql,toVCenter,fromVCenter}]
+D:\Home Directories\Home\Documents\Repositories\python3-asyncio-example [master ≡ +0 ~1 -0 !]> python .\async.py -h
+usage: async.py [-h] -c {poc01,devops1,se3,isilon,sql,toVCenter,fromVCenter}
 
 optional arguments:
   -h, --help            show this help message and exit
-  --cluster {poc01,devops1,se3,isilon,sql,toVCenter,fromVCenter}
+  -c {poc01,devops1,se3,isilon,sql,toVCenter,fromVCenter}, --cluster {poc01,devops1,se3,isilon,sql,toVCenter,fromVCenter}
                         Choose a cluster in .creds
 ```
 
 ### Running it
 ```
-D:\Home Directories\Home\Documents\Repositories\python3-asyncio-example [master ≡ +1 ~2 -0 !]> python .\async.py --cluster devops1
+D:\Home Directories\Home\Documents\Repositories\python3-asyncio-example [master ≡ +0 ~1 -0 !]> python .\async.py -c devops1
 Running initial query for IDs
 Running 43 sub requests syncronously
 Running 43 sub requests asyncronously
 Data from : Fri May 25 00:00:00 UTC 2018 - Fri May 25 24:00:00 UTC 2018
 Event series reported : 43
-Sync : 26.0512638092041
-Async : 5.69584321975708
-Number of calls : 44
+Sync : 24.770633935928345
+Async : 5.1178858280181885
 ```
 Note the difference!
